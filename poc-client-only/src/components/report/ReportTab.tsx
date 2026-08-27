@@ -213,10 +213,8 @@ export function ReportTab({ session, customer, selectedDate }: ReportTabProps) {
 
   function handleVisitComplete() {
     const iso = toIsoDateTime(selectedDate, startTime);
-    // sendVisitCompleteNotificationは通知のみ・保存は行わない
-    import("../../api").then(({ sendVisitCompleteNotification }) => {
-      sendVisitCompleteNotification(session, customer.name, iso);
-    });
+    // 通知のみ・保存は行わない
+    sendVisitCompleteNotification(session, customer.name, iso);
     setVisitCompleteMsg("訪問完了の通知を送信しました。");
     setTimeout(() => setVisitCompleteMsg(null), 3000);
   }
