@@ -1,0 +1,308 @@
+.att-tab {
+  padding: 1em;
+}
+
+.att-top-actions .app-btn {
+  flex: 1;
+}
+
+.att-notice {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------- 週間表示 */
+
+.att-week-header {
+  gap: 0.5em;
+}
+
+.att-week-label-wrap {
+  align-items: center;
+  gap: 0.1em;
+  flex: 1;
+}
+
+.att-week-label {
+  font-weight: 700;
+}
+
+.att-today-btn {
+  align-self: center;
+}
+
+.att-day-card {
+  padding: 0.7em 0.8em;
+}
+
+.att-day-card-today {
+  border-color: var(--color-primary);
+  background: #f3faf6;
+}
+
+.att-day-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-weight: 700;
+  font-size: 1em;
+  color: var(--color-text);
+  text-align: left;
+}
+
+.att-event-chip-list {
+  gap: 0.4em;
+}
+
+.att-event-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+  background: var(--color-bg);
+  border: none;
+  border-left: 4px solid var(--color-accent);
+  border-radius: 6px;
+  padding: 0.4em 0.6em;
+  text-align: left;
+}
+
+/* ---------------------------------------------------------------- タイムライン */
+
+.att-timeline {
+  position: relative;
+  height: 40px;
+  background: var(--color-bg);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.att-timeline-compact {
+  height: 22px;
+}
+
+.att-timeline-hour {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px dashed var(--color-border);
+}
+
+.att-timeline-hour span {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 0.65em;
+  color: var(--color-text-muted);
+}
+
+.att-timeline-tick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 1px dashed var(--color-border);
+}
+
+.att-timeline-block {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.7em;
+  padding: 0 0.3em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+  cursor: pointer;
+}
+
+.att-timeline-block-label {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------------------------------------------------------------- 1日表示 */
+
+.att-day-drilldown {
+  gap: 0.8em;
+}
+
+.att-panel-title {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.att-day-actions {
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.att-record-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+  background: var(--color-bg);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 0.7em;
+  text-align: left;
+  width: 100%;
+}
+
+.att-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 0.35em;
+  column-gap: 1em;
+  font-size: 0.9em;
+}
+
+.att-summary-grid span:nth-child(odd) {
+  color: var(--color-text-muted);
+}
+
+.att-summary-grid span:nth-child(even) {
+  text-align: right;
+  font-weight: 600;
+}
+
+.att-toast {
+  background: #1f2933;
+  color: #fff;
+  padding: 0.5em 0.9em;
+  border-radius: 8px;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.att-slot-loading {
+  min-height: 60px;
+}
+
+/* ---------------------------------------------------------------- 距離パネル */
+
+.att-distance-panel .field-label {
+  margin-top: 0.4em;
+}
+
+.att-distance-group {
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.7em;
+}
+
+.att-distance-group:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.att-weather-btn {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.2em 0.6em;
+  font-size: 1em;
+}
+
+.att-weather-btn.active {
+  background: #e0f2fe;
+  border-color: var(--color-accent);
+}
+
+/* ---------------------------------------------------------------- カレンダー反映 */
+
+.att-diff-row {
+  padding: 0.6em 0.8em;
+}
+
+.att-diff-values {
+  margin-top: 0.3em;
+}
+
+/* ---------------------------------------------------------------- 一括反映 */
+
+.att-staff-checklist {
+  max-height: 160px;
+  overflow-y: auto;
+  gap: 0.3em;
+}
+
+.att-staff-check-row {
+  gap: 0.5em;
+}
+
+.att-progress-track {
+  height: 8px;
+  background: var(--color-bg);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.att-progress-fill {
+  height: 100%;
+  background: var(--color-primary);
+  transition: width 0.15s ease;
+}
+
+.att-fail-list {
+  max-height: 140px;
+  overflow-y: auto;
+}
+
+/* ---------------------------------------------------------------- 月次集計 */
+
+.att-monthly-table {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.78em;
+}
+
+.att-monthly-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.6fr 0.9fr 0.9fr 0.9fr 0.9fr 0.7fr;
+  gap: 0.3em;
+  padding: 0.4em 0.2em;
+  border-bottom: 1px solid var(--color-border);
+  text-align: right;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 100%;
+}
+
+.att-monthly-row span:first-child,
+.att-monthly-row span:nth-child(2) {
+  text-align: left;
+}
+
+.att-monthly-head {
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.att-monthly-data-row {
+  cursor: pointer;
+}
+
+.att-monthly-data-row:active {
+  background: #f4f8f6;
+}
+
+.att-monthly-dest {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.att-monthly-total-row {
+  font-weight: 700;
+  border-bottom: none;
+  border-top: 2px solid var(--color-border);
+}
