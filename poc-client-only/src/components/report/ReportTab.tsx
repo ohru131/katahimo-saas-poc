@@ -6,8 +6,6 @@ import { loadJSON, saveJSON, removeKey } from "../../data/store";
 import { StarRating } from "./StarRating";
 import { SaveButton } from "./SaveButton";
 import { buildTimeOptions, addMinutesClamped, calcAge, toIsoDateTime } from "./reportUtils";
-// TODO: ReceiptCapturePanel は領収書モーダル担当エージェントの実装完了後に解決される想定の named export。
-// (受入テスト時点で存在しない場合はビルドを壊さないようフォールバック表示にする)
 import { ReceiptCapturePanel } from "../receipt/ReceiptModal";
 
 const TIME_OPTIONS = buildTimeOptions();
