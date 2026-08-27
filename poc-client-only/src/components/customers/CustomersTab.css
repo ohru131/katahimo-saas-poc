@@ -1,0 +1,91 @@
+.customers-tab {
+  padding: 1em;
+}
+
+.customers-filters {
+  gap: 0.7em;
+}
+
+.customer-card {
+  cursor: pointer;
+}
+
+.customer-card:active {
+  background: #f4f8f6;
+}
+
+.customer-card-name {
+  font-weight: 700;
+}
+
+.customer-card-actions {
+  margin-top: 0.6em;
+  gap: 0.5em;
+}
+
+.section-title {
+  font-size: 0.95em;
+  font-weight: 700;
+  margin: 0.2em 0 0;
+}
+
+.detail-row {
+  align-items: flex-start;
+  gap: 0.8em;
+}
+
+.detail-row .field-label {
+  margin: 0;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.detail-row .detail-value {
+  text-align: right;
+  word-break: break-word;
+}
+
+.family-card {
+  gap: 0.3em;
+}
+
+.family-name {
+  font-weight: 700;
+}
+
+.history-entry {
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-ratings {
+  flex-wrap: wrap;
+  gap: 0.4em;
+}
+
+.rating-badge {
+  background: #fef3e0;
+  color: #92400e;
+}
+
+.history-tabs {
+  gap: 0.4em;
+  flex-wrap: wrap;
+}
+
+.history-tabs .app-btn {
+  padding: 0.3em 0.6em;
+  font-size: 0.8em;
+}
+
+.history-text {
+  margin: 0;
+  white-space: pre-wrap;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.history-pagination {
+  margin-top: 0.3em;
+}
